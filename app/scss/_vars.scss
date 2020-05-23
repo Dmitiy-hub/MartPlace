@@ -2,6 +2,11 @@ $blue: #0674ec;
 $violet: #7347c1;
 $grey: #333333;
 
+@mixin q300 {
+  font-family: 'Quicksand', sans-serif;
+  font-weight: 300;
+}
+
 @mixin q500 {
   font-family: 'Quicksand', sans-serif;
   font-weight: 500;
@@ -11,4 +16,3 @@ $grey: #333333;
   font-family: 'Quicksand', sans-serif;
   font-weight: bold;
 }
-
