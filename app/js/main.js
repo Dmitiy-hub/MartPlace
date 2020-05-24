@@ -11,6 +11,12 @@ $(function () {
     starWidth: "15px"
   });
 
+  $(".products__item-rate").rateYo({
+    rating: 4.2,
+    readOnly: true,
+    starWidth: "14px"
+  });
+
   $('.product-slider__inner').slick({
     infinite: true,
     slidesToShow: 3,

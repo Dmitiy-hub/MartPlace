@@ -53,14 +53,12 @@
     position: absolute;
   }
 
-  &::before {
-    content: "17";
+  span {
+    content: "";
     position: absolute;
     bottom: 10px;
     left: 7px;
-    min-width: 18px;
-    height: 18px;
-    padding: 2px 2px;
+    padding: 7px 7px;
     border-radius: 50%;
     background-color: #ff6a6c;
     text-align: center;
@@ -79,14 +77,12 @@
     position: absolute;
   }
 
-  &::before {
-    content: "65";
+  span {
+    content: "";
     position: absolute;
     bottom: 10px;
     left: 7px;
-    min-width: 18px;
-    height: 18px;
-    padding: 2px 2px;
+    padding: 7px 7px;
     border-radius: 50%;
     background-color: $blue;
     text-align: center;
@@ -105,14 +101,12 @@
     position: absolute;
   }
 
-  &::before {
-    content: "87";
+  span {
+    content: "";
     position: absolute;
     bottom: 9px;
     left: 9px;
-    min-width: 18px;
-    height: 18px;
-    padding: 2px 2px;
+    padding: 7px 7px;
     border-radius: 50%;
     background-color: #62d03b;
     text-align: center;
@@ -242,18 +236,22 @@
 .search__inner {
   position: relative;
 
-  &-suptitle {
-    font-size: 60px;
-    line-height: 70px;
-    padding-top: 185px;
-    margin-bottom: 20px;
-  }
-
   &-title {
     font-size: 60px;
     line-height: 70px;
     @include q700;
     margin-bottom: 50px;
+    text-shadow: 0 2px 2px rgba(0, 0, 0, 0.2);
+
+    span {
+      font-size: 60px;
+      display: block;
+      line-height: 70px;
+      padding-top: 185px;
+      margin-bottom: 20px;
+      font-family: "Quicksand-Regular";
+      font-weight: 400;
+    }
   }
 
   &-text {
@@ -267,7 +265,8 @@
   color: #fff;
   border: 1px solid #fff;
   border-radius: 45px;
-  padding: 15px 30px;
+  padding: 21px 32px;
+  line-height: 16px;
   transition: all 0.5s;
 
   &+a {
@@ -281,9 +280,9 @@
 }
 
 .search__form {
-  position: absolute;
+  position: relative;
   z-index: 10;
-  bottom: -238px;
+  bottom: -111px;
   left: 0;
   right: 0;
   margin: 0 auto;
@@ -333,6 +332,7 @@
     padding: 0 30px;
     border: 1px solid rgb(220, 220, 220);
     border-radius: 4px 0 0 4px;
+    outline: none;
   }
 
   button {
@@ -344,6 +344,7 @@
     margin-left: 25px;
     border-radius: 4px;
     color: #fff;
+    outline: none;
     cursor: pointer;
   }
 
@@ -362,6 +363,7 @@
     margin-left: -6px;
     background: url(../images/icons/chevron-down.svg) no-repeat 95% 17px;
     background-size: 13px 20px;
+    outline: none;
   }
 }
 
@@ -611,6 +613,24 @@
 
   &__title {
     margin-bottom: 30px;
+    position: relative;
+
+    span {
+      position: absolute;
+      font-size: 16px;
+      top: 43px;
+      right: 30px;
+      color: #747b86;
+
+      button {
+        background-color: transparent;
+        border: none;
+        outline: none;
+        color: #747b86;
+        margin-left: 25px;
+        cursor: pointer;
+      }
+    }
   }
 
   &__inner-btn {
@@ -682,12 +702,12 @@
     &__menu {
       position: absolute;
       min-height: 0;
+      display: inline-block;
       background-repeat: no-repeat;
       background-position: center;
       background-size: cover;
       border-radius: 4px 4px 0 0;
       width: 100%;
-      display: inline-block;
       text-align: center;
       transition: all 1s;
 
@@ -821,6 +841,7 @@
     padding-left: 23px;
     color: $blue;
     font-size: 15px;
+    margin-left: 31px;
     position: relative;
 
     &::before {
@@ -1025,6 +1046,12 @@
     background-position: center;
     background-size: cover;
     padding: 100px 0 50px;
+    transition: all 1s;
+
+    &:hover {
+      transform: scale(1.02);
+      box-shadow: 0 2px 4px rgba(108, 111, 115, 0.3);
+    }
 
     &-img {
       min-height: 121px;
@@ -1034,6 +1061,7 @@
       background-position: center;
       background-size: cover;
       margin-bottom: 50px;
+      display: block;
     }
 
     &-title {
@@ -1166,14 +1194,11 @@
       background-repeat: no-repeat;
       background-position: center;
       background-size: cover;
+      display: block;
     }
 
     &-box {
       background-color: #fff;
-    }
-
-    &-content {
-      border-bottom: 1px solid #ececec;
     }
 
     &-title {
@@ -1199,6 +1224,7 @@
       color: #7e7e7e;
       font-size: 15px;
       line-height: 15px;
+      border-top: 1px solid #ececec;
     }
 
     &-date {
@@ -1329,7 +1355,6 @@
   background-color: #262b30;
   padding: 132px 0;
 
-
   &-inner {
     display: flex;
     justify-content: space-between;
@@ -1400,9 +1425,13 @@
 
   &-social {
     margin-top: 50px;
+    display: flex;
 
     a {
       color: #ffffff;
+      display: flex;
+      justify-content: center;
+      align-items: center;
       width: 42px;
       height: 42px;
       padding: 13px;
@@ -1451,7 +1480,6 @@
     &.menu {
       max-width: 142px;
 
-
       li {
         margin-bottom: 15px;
 
@@ -1459,7 +1487,6 @@
           color: #ababab;
         }
       }
-
     }
 
     &.social {
@@ -1469,11 +1496,12 @@
         position: relative;
 
         input {
-          padding: 20px 30px;
+          padding: 20px 130px 20px 30px;
           background-color: #fff;
           border-radius: 35px;
           color: #000;
           width: 100%;
+          border: none;
           outline: none;
 
           &::placeholder {
@@ -1491,14 +1519,13 @@
           border: none;
           cursor: pointer;
           border-radius: 35px;
-          right: -2px;
-          top: 2px;
+          right: 0px;
+          top: 0px;
           outline: none;
         }
       }
     }
   }
-
 }
 
 .footer-copy {
@@ -1507,7 +1534,7 @@
   background-color: #192027;
   color: #ababab;
 
-  span {
+  a {
     color: #ffffff;
   }
 }
