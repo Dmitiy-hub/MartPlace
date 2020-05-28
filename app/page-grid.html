@@ -1,0 +1,843 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Document</title>
+  <link href="https://use.fontawesome.com/releases/v5.0.13/css/all.css" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300;500;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/libs.min.css" />
+  <link rel="stylesheet" href="css/style.min.css" />
+</head>
+
+<body>
+  <div class="wrapper">
+    <div class="content page-content">
+      <header class="header">
+        <div class="header__top">
+          <div class="container">
+            <div class="header__top-inner">
+              <div class="header__logo">
+                <a href="#">
+                  <img src="images/logo.png" alt="logo" />
+                </a>
+              </div>
+              <div class="header__top-box">
+                <a class="header__btn" href="#">Become a Seller</a>
+                <a class="notification alarm" href="#"><span>37</span></a>
+                <a class="notification envelope" href="#"><span>87</span></a>
+                <a class="notification cart" href="#"><span>64</span></a>
+              </div>
+              <div class="header__top-user">
+                <div class="user__logo">
+                  <a class="user__logo-img" href="#" style="background-image: url(images/user.jpg);"></a>
+                </div>
+                <div class="user__info">
+                  <a class="user__name" href="#">
+                    Taofiq Hakim
+                  </a>
+                  <div class="user__prise">
+                    $20.45
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="header__bottom">
+          <div class="container">
+            <div class="header__bottom-inner">
+              <nav class="menu">
+                <ul class="menu__list">
+                  <li><a href="#">HOME</a></li>
+                  <li><a href="#">all products</a></li>
+                  <li><a href="#">wordpress</a></li>
+                  <li><a href="#">festures</a></li>
+                  <li><a href="#">Pages</a></li>
+                </ul>
+              </nav>
+              <form class="header__form">
+                <input type="text" placeholder="Search product here...">
+                <button type="submit">
+                </button>
+              </form>
+            </div>
+          </div>
+        </div>
+      </header>
+
+      <section class="search page">
+        <div class="container">
+          <div class="search__inner">
+            <div class="search__inner-title">
+              <span>4,572</span>
+              wordpress themes, made with love
+            </div>
+            <form>
+              <input type="text" placeholder="Search your products">
+              <button type="submit">Search</button>
+            </form>
+            <div class="breadcrumbs">
+              <div class="breadcrumbs__inner">
+                <ul class="breadcrumbs__list">
+                  <li>
+                    <a href="#">
+                      Home
+                    </a>
+                  </li>
+                  <li>
+                    <span href="#">
+                      CategoryPage Grid
+                    </span>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="product-page">
+        <div class="product-page__filter">
+          <div class="container">
+            <div class="product-page__filter-inner">
+              <div class="filter__buttons">
+                <button class="active">New Products</button>
+                <button>Popular Products</button>
+              </div>
+              <div class="filter__select">
+                <select name="" id="">
+                  <option value="1">Price : Low to High</option>
+                  <option value="2"></option>
+                </select>
+
+                <select name="" id="">
+                  <option value="1">12 Items Per Page</option>
+                  <option value="2"></option>
+                </select>
+              </div>
+              <div class="filter-list__btn">
+                <button class="list grid-btn active"><i class="fas fa-th-large"></i></button>
+                <button class="list list-btn"><i class="fas fa-list"></i></button>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="container">
+          <div class="product-page__inner">
+
+            <aside class="product-page__aside">
+              <div class="category aside__item">
+                <div class="aside__title">
+                  Categories
+                </div>
+                <ul class="category__list">
+                  <li class="active"><a href="#">Wordpress</a><span>35</span></li>
+                  <li><a href="#">Landing Page</a><span>45</span></li>
+                  <li><a href="#">Psd Template</a><span>13</span></li>
+                  <li><a href="#">Plugins</a><span>08</span></li>
+                  <li><a href="#">HTML Template</a><span>34</span></li>
+                  <li><a href="#">Components</a><span>78</span></li>
+                  <li><a href="#">Joomla Template</a><span>26</span></li>
+                </ul>
+              </div>
+              <div class="filter-products aside__item">
+                <div class="aside__title">
+                  Filter Products
+                </div>
+                <ul class="filter-products__list">
+                  <li><a href="#">Trending Products</a></li>
+                  <li><a href="#">Popular Products</a></li>
+                  <li><a href="#">New Products</a></li>
+                  <li><a href="#">Best Seller</a></li>
+                  <li><a href="#">Best Rating</a></li>
+                  <li><a href="#">Low Price</a></li>
+                  <li><a href="#">High Price</a></li>
+                </ul>
+              </div>
+
+              <div class="pricing-range aside__item">
+                <div class="aside__title">
+                  Pricing Range
+                </div>
+                <form>
+                  <input type="text" class="js-range-slider" name="my_range" value="" />
+                  <button type="submit">Search Update</button>
+                </form>
+              </div>
+
+            </aside>
+
+            <div class="product-page__content">
+              <div class="product-page__items">
+                <div class="products__item page">
+                  <div class="products__item-img" style="background-image: url(images/content/BG_products1.jpg);">
+                    <div class="products__item-img__menu"
+                      style="background-image: linear-gradient(to left, #0674ec 0%, #7347c1 100%);">
+                      <a class="more" href="#">More Info</a>
+                      <a class="demo" href="#">Live Demo</a>
+                    </div>
+                  </div>
+                  <div class="products__item-content">
+                    <a class="products__item-title" href="#">
+                      Finance and Consulting
+                      Business Theme
+                    </a>
+                    <div class="products__item-content__list">
+                      <a class="products__item-title__list" href="#">
+                        Best YouTube Channels
+                        For UI/UX Designers
+                      </a>
+                      <div class="products__item-text__list">
+                        Nunc placerat mi id nisi inter dum mollis. Praesent phare...
+                      </div>
+                      <a class="products__item-type__list" href="#">
+                        Wordpress
+                      </a>
+                    </div>
+                    <div class="products__item-product__list">
+                      <a class="products__item-product" href="#">
+                        <span style="background-image: url(images/user.jpg);"></span>
+                        Theme-Valley
+                      </a>
+                      <div class="products__item-loves__list">90 loves</div>
+                      <div class="products__item-comments__list">90 Comments</div>
+                      <div class="rate__box">
+                        <div class="products__item-rate__list"></div>
+                        <span class="rate__num">(34)</span>
+                      </div>
+                    </div>
+                    <div class="products__item-info">
+                      <div class="products__item-rate"></div>
+                      <div class="products__item-cart">
+                        246
+                      </div>
+                    </div>
+                    <div class="products__item-buy">
+                      <a class="products__item-price" href="#">
+                        $20
+                      </a>
+                      <a class="products__item-price__list" href="#">
+                        $10 - $50
+                      </a>
+                      <div class="products__item-cart__list">
+                        246
+                      </div>
+                      <a class="products__item-type" href="#">
+                        Wordpress
+                      </a>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="products__item page">
+                  <div class="products__item-img" style="background-image: url(images/content/BG_products1.jpg);">
+                    <div class="products__item-img__menu"
+                      style="background-image: linear-gradient(to left, #0674ec 0%, #7347c1 100%);">
+                      <a class="more" href="#">More Info</a>
+                      <a class="demo" href="#">Live Demo</a>
+                    </div>
+                  </div>
+                  <div class="products__item-content">
+                    <a class="products__item-title" href="#">
+                      Finance and Consulting
+                      Business Theme
+                    </a>
+                    <div class="products__item-content__list">
+                      <a class="products__item-title__list" href="#">
+                        Best YouTube Channels
+                        For UI/UX Designers
+                      </a>
+                      <div class="products__item-text__list">
+                        Nunc placerat mi id nisi inter dum mollis. Praesent phare...
+                      </div>
+                      <a class="products__item-type__list" href="#">
+                        Wordpress
+                      </a>
+                    </div>
+                    <div class="products__item-product__list">
+                      <a class="products__item-product" href="#">
+                        <span style="background-image: url(images/user.jpg);"></span>
+                        Theme-Valley
+                      </a>
+                      <div class="products__item-loves__list">90 loves</div>
+                      <div class="products__item-comments__list">90 Comments</div>
+                      <div class="rate__box">
+                        <div class="products__item-rate__list"></div>
+                        <span class="rate__num">(34)</span>
+                      </div>
+                    </div>
+                    <div class="products__item-info">
+                      <div class="products__item-rate"></div>
+                      <div class="products__item-cart">
+                        246
+                      </div>
+                    </div>
+                    <div class="products__item-buy">
+                      <a class="products__item-price" href="#">
+                        $20
+                      </a>
+                      <a class="products__item-price__list" href="#">
+                        $10 - $50
+                      </a>
+                      <div class="products__item-cart__list">
+                        246
+                      </div>
+                      <a class="products__item-type" href="#">
+                        Wordpress
+                      </a>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="products__item page">
+                  <div class="products__item-img" style="background-image: url(images/content/BG_products1.jpg);">
+                    <div class="products__item-img__menu"
+                      style="background-image: linear-gradient(to left, #0674ec 0%, #7347c1 100%);">
+                      <a class="more" href="#">More Info</a>
+                      <a class="demo" href="#">Live Demo</a>
+                    </div>
+                  </div>
+                  <div class="products__item-content">
+                    <a class="products__item-title" href="#">
+                      Finance and Consulting
+                      Business Theme
+                    </a>
+                    <div class="products__item-content__list">
+                      <a class="products__item-title__list" href="#">
+                        Best YouTube Channels
+                        For UI/UX Designers
+                      </a>
+                      <div class="products__item-text__list">
+                        Nunc placerat mi id nisi inter dum mollis. Praesent phare...
+                      </div>
+                      <a class="products__item-type__list" href="#">
+                        Wordpress
+                      </a>
+                    </div>
+                    <div class="products__item-product__list">
+                      <a class="products__item-product" href="#">
+                        <span style="background-image: url(images/user.jpg);"></span>
+                        Theme-Valley
+                      </a>
+                      <div class="products__item-loves__list">90 loves</div>
+                      <div class="products__item-comments__list">90 Comments</div>
+                      <div class="rate__box">
+                        <div class="products__item-rate__list"></div>
+                        <span class="rate__num">(34)</span>
+                      </div>
+                    </div>
+                    <div class="products__item-info">
+                      <div class="products__item-rate"></div>
+                      <div class="products__item-cart">
+                        246
+                      </div>
+                    </div>
+                    <div class="products__item-buy">
+                      <a class="products__item-price" href="#">
+                        $20
+                      </a>
+                      <a class="products__item-price__list" href="#">
+                        $10 - $50
+                      </a>
+                      <div class="products__item-cart__list">
+                        246
+                      </div>
+                      <a class="products__item-type" href="#">
+                        Wordpress
+                      </a>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="products__item page">
+                  <div class="products__item-img" style="background-image: url(images/content/BG_products1.jpg);">
+                    <div class="products__item-img__menu"
+                      style="background-image: linear-gradient(to left, #0674ec 0%, #7347c1 100%);">
+                      <a class="more" href="#">More Info</a>
+                      <a class="demo" href="#">Live Demo</a>
+                    </div>
+                  </div>
+                  <div class="products__item-content">
+                    <a class="products__item-title" href="#">
+                      Finance and Consulting
+                      Business Theme
+                    </a>
+                    <div class="products__item-content__list">
+                      <a class="products__item-title__list" href="#">
+                        Best YouTube Channels
+                        For UI/UX Designers
+                      </a>
+                      <div class="products__item-text__list">
+                        Nunc placerat mi id nisi inter dum mollis. Praesent phare...
+                      </div>
+                      <a class="products__item-type__list" href="#">
+                        Wordpress
+                      </a>
+                    </div>
+                    <div class="products__item-product__list">
+                      <a class="products__item-product" href="#">
+                        <span style="background-image: url(images/user.jpg);"></span>
+                        Theme-Valley
+                      </a>
+                      <div class="products__item-loves__list">90 loves</div>
+                      <div class="products__item-comments__list">90 Comments</div>
+                      <div class="rate__box">
+                        <div class="products__item-rate__list"></div>
+                        <span class="rate__num">(34)</span>
+                      </div>
+                    </div>
+                    <div class="products__item-info">
+                      <div class="products__item-rate"></div>
+                      <div class="products__item-cart">
+                        246
+                      </div>
+                    </div>
+                    <div class="products__item-buy">
+                      <a class="products__item-price" href="#">
+                        $20
+                      </a>
+                      <a class="products__item-price__list" href="#">
+                        $10 - $50
+                      </a>
+                      <div class="products__item-cart__list">
+                        246
+                      </div>
+                      <a class="products__item-type" href="#">
+                        Wordpress
+                      </a>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="products__item page">
+                  <div class="products__item-img" style="background-image: url(images/content/BG_products1.jpg);">
+                    <div class="products__item-img__menu"
+                      style="background-image: linear-gradient(to left, #0674ec 0%, #7347c1 100%);">
+                      <a class="more" href="#">More Info</a>
+                      <a class="demo" href="#">Live Demo</a>
+                    </div>
+                  </div>
+                  <div class="products__item-content">
+                    <a class="products__item-title" href="#">
+                      Finance and Consulting
+                      Business Theme
+                    </a>
+                    <div class="products__item-content__list">
+                      <a class="products__item-title__list" href="#">
+                        Best YouTube Channels
+                        For UI/UX Designers
+                      </a>
+                      <div class="products__item-text__list">
+                        Nunc placerat mi id nisi inter dum mollis. Praesent phare...
+                      </div>
+                      <a class="products__item-type__list" href="#">
+                        Wordpress
+                      </a>
+                    </div>
+                    <div class="products__item-product__list">
+                      <a class="products__item-product" href="#">
+                        <span style="background-image: url(images/user.jpg);"></span>
+                        Theme-Valley
+                      </a>
+                      <div class="products__item-loves__list">90 loves</div>
+                      <div class="products__item-comments__list">90 Comments</div>
+                      <div class="rate__box">
+                        <div class="products__item-rate__list"></div>
+                        <span class="rate__num">(34)</span>
+                      </div>
+                    </div>
+                    <div class="products__item-info">
+                      <div class="products__item-rate"></div>
+                      <div class="products__item-cart">
+                        246
+                      </div>
+                    </div>
+                    <div class="products__item-buy">
+                      <a class="products__item-price" href="#">
+                        $20
+                      </a>
+                      <a class="products__item-price__list" href="#">
+                        $10 - $50
+                      </a>
+                      <div class="products__item-cart__list">
+                        246
+                      </div>
+                      <a class="products__item-type" href="#">
+                        Wordpress
+                      </a>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="products__item page">
+                  <div class="products__item-img" style="background-image: url(images/content/BG_products1.jpg);">
+                    <div class="products__item-img__menu"
+                      style="background-image: linear-gradient(to left, #0674ec 0%, #7347c1 100%);">
+                      <a class="more" href="#">More Info</a>
+                      <a class="demo" href="#">Live Demo</a>
+                    </div>
+                  </div>
+                  <div class="products__item-content">
+                    <a class="products__item-title" href="#">
+                      Finance and Consulting
+                      Business Theme
+                    </a>
+                    <div class="products__item-content__list">
+                      <a class="products__item-title__list" href="#">
+                        Best YouTube Channels
+                        For UI/UX Designers
+                      </a>
+                      <div class="products__item-text__list">
+                        Nunc placerat mi id nisi inter dum mollis. Praesent phare...
+                      </div>
+                      <a class="products__item-type__list" href="#">
+                        Wordpress
+                      </a>
+                    </div>
+                    <div class="products__item-product__list">
+                      <a class="products__item-product" href="#">
+                        <span style="background-image: url(images/user.jpg);"></span>
+                        Theme-Valley
+                      </a>
+                      <div class="products__item-loves__list">90 loves</div>
+                      <div class="products__item-comments__list">90 Comments</div>
+                      <div class="rate__box">
+                        <div class="products__item-rate__list"></div>
+                        <span class="rate__num">(34)</span>
+                      </div>
+                    </div>
+                    <div class="products__item-info">
+                      <div class="products__item-rate"></div>
+                      <div class="products__item-cart">
+                        246
+                      </div>
+                    </div>
+                    <div class="products__item-buy">
+                      <a class="products__item-price" href="#">
+                        $20
+                      </a>
+                      <a class="products__item-price__list" href="#">
+                        $10 - $50
+                      </a>
+                      <div class="products__item-cart__list">
+                        246
+                      </div>
+                      <a class="products__item-type" href="#">
+                        Wordpress
+                      </a>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="products__item page">
+                  <div class="products__item-img" style="background-image: url(images/content/BG_products1.jpg);">
+                    <div class="products__item-img__menu"
+                      style="background-image: linear-gradient(to left, #0674ec 0%, #7347c1 100%);">
+                      <a class="more" href="#">More Info</a>
+                      <a class="demo" href="#">Live Demo</a>
+                    </div>
+                  </div>
+                  <div class="products__item-content">
+                    <a class="products__item-title" href="#">
+                      Finance and Consulting
+                      Business Theme
+                    </a>
+                    <div class="products__item-content__list">
+                      <a class="products__item-title__list" href="#">
+                        Best YouTube Channels
+                        For UI/UX Designers
+                      </a>
+                      <div class="products__item-text__list">
+                        Nunc placerat mi id nisi inter dum mollis. Praesent phare...
+                      </div>
+                      <a class="products__item-type__list" href="#">
+                        Wordpress
+                      </a>
+                    </div>
+                    <div class="products__item-product__list">
+                      <a class="products__item-product" href="#">
+                        <span style="background-image: url(images/user.jpg);"></span>
+                        Theme-Valley
+                      </a>
+                      <div class="products__item-loves__list">90 loves</div>
+                      <div class="products__item-comments__list">90 Comments</div>
+                      <div class="rate__box">
+                        <div class="products__item-rate__list"></div>
+                        <span class="rate__num">(34)</span>
+                      </div>
+                    </div>
+                    <div class="products__item-info">
+                      <div class="products__item-rate"></div>
+                      <div class="products__item-cart">
+                        246
+                      </div>
+                    </div>
+                    <div class="products__item-buy">
+                      <a class="products__item-price" href="#">
+                        $20
+                      </a>
+                      <a class="products__item-price__list" href="#">
+                        $10 - $50
+                      </a>
+                      <div class="products__item-cart__list">
+                        246
+                      </div>
+                      <a class="products__item-type" href="#">
+                        Wordpress
+                      </a>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="products__item page">
+                  <div class="products__item-img" style="background-image: url(images/content/BG_products1.jpg);">
+                    <div class="products__item-img__menu"
+                      style="background-image: linear-gradient(to left, #0674ec 0%, #7347c1 100%);">
+                      <a class="more" href="#">More Info</a>
+                      <a class="demo" href="#">Live Demo</a>
+                    </div>
+                  </div>
+                  <div class="products__item-content">
+                    <a class="products__item-title" href="#">
+                      Finance and Consulting
+                      Business Theme
+                    </a>
+                    <div class="products__item-content__list">
+                      <a class="products__item-title__list" href="#">
+                        Best YouTube Channels
+                        For UI/UX Designers
+                      </a>
+                      <div class="products__item-text__list">
+                        Nunc placerat mi id nisi inter dum mollis. Praesent phare...
+                      </div>
+                      <a class="products__item-type__list" href="#">
+                        Wordpress
+                      </a>
+                    </div>
+                    <div class="products__item-product__list">
+                      <a class="products__item-product" href="#">
+                        <span style="background-image: url(images/user.jpg);"></span>
+                        Theme-Valley
+                      </a>
+                      <div class="products__item-loves__list">90 loves</div>
+                      <div class="products__item-comments__list">90 Comments</div>
+                      <div class="rate__box">
+                        <div class="products__item-rate__list"></div>
+                        <span class="rate__num">(34)</span>
+                      </div>
+                    </div>
+                    <div class="products__item-info">
+                      <div class="products__item-rate"></div>
+                      <div class="products__item-cart">
+                        246
+                      </div>
+                    </div>
+                    <div class="products__item-buy">
+                      <a class="products__item-price" href="#">
+                        $20
+                      </a>
+                      <a class="products__item-price__list" href="#">
+                        $10 - $50
+                      </a>
+                      <div class="products__item-cart__list">
+                        246
+                      </div>
+                      <a class="products__item-type" href="#">
+                        Wordpress
+                      </a>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="products__item page">
+                  <div class="products__item-img" style="background-image: url(images/content/BG_products1.jpg);">
+                    <div class="products__item-img__menu"
+                      style="background-image: linear-gradient(to left, #0674ec 0%, #7347c1 100%);">
+                      <a class="more" href="#">More Info</a>
+                      <a class="demo" href="#">Live Demo</a>
+                    </div>
+                  </div>
+                  <div class="products__item-content">
+                    <a class="products__item-title" href="#">
+                      Finance and Consulting
+                      Business Theme
+                    </a>
+                    <div class="products__item-content__list">
+                      <a class="products__item-title__list" href="#">
+                        Best YouTube Channels
+                        For UI/UX Designers
+                      </a>
+                      <div class="products__item-text__list">
+                        Nunc placerat mi id nisi inter dum mollis. Praesent phare...
+                      </div>
+                      <a class="products__item-type__list" href="#">
+                        Wordpress
+                      </a>
+                    </div>
+                    <div class="products__item-product__list">
+                      <a class="products__item-product" href="#">
+                        <span style="background-image: url(images/user.jpg);"></span>
+                        Theme-Valley
+                      </a>
+                      <div class="products__item-loves__list">90 loves</div>
+                      <div class="products__item-comments__list">90 Comments</div>
+                      <div class="rate__box">
+                        <div class="products__item-rate__list"></div>
+                        <span class="rate__num">(34)</span>
+                      </div>
+                    </div>
+                    <div class="products__item-info">
+                      <div class="products__item-rate"></div>
+                      <div class="products__item-cart">
+                        246
+                      </div>
+                    </div>
+                    <div class="products__item-buy">
+                      <a class="products__item-price" href="#">
+                        $20
+                      </a>
+                      <a class="products__item-price__list" href="#">
+                        $10 - $50
+                      </a>
+                      <div class="products__item-cart__list">
+                        246
+                      </div>
+                      <a class="products__item-type" href="#">
+                        Wordpress
+                      </a>
+                    </div>
+                  </div>
+                </div>
+
+              </div>
+              <div class="pagination">
+                <ul class="pagination__list">
+                  <li><button class="lnr-arrow-left" href="#"></button></li>
+                  <li><a class="active" href="#">1</a></li>
+                  <li><a href="#">2</a></li>
+                  <li><a href="#">...</a></li>
+                  <li><a href="#">8</a></li>
+                  <li><button class="lnr-arrow-right active" href="#"></button></li>
+                </ul>
+              </div>
+            </div>
+
+          </div>
+        </div>
+      </section>
+
+
+
+      <section class="join">
+        <div class="container">
+          <div class="join__inner">
+            <div class="join__inner-title">
+              Ready to Join Our Marketplace!
+            </div>
+            <div class="join__inner-subtitle">
+              Over 25,000 designers and developers trust the MartPlace.
+            </div>
+            <a class="join__inner-btn" href="#">Join Us Today</a>
+          </div>
+        </div>
+      </section>
+    </div>
+
+
+    <footer class="footer">
+      <div class="footer__content">
+        <div class="container">
+          <div class="footer__content-inner">
+            <div class="footer__content-col">
+              <div class="footer__content-title">
+                <img src="images/footer-logo.png" alt="logo">
+              </div>
+              <div class="footer__content-text">
+                Nunc placerat mi id nisi interdum they mollis. Praesent pharetra, justo ut scel erisque the mattis, leo
+                quam.
+              </div>
+              <div class="footer__content-contacts">
+                <div class="footer__content-phone">
+                  Phone:<a href="tel:67898752235">+6789-875-2235</a>
+                </div>
+                <a class="footer__content-mail" href="#">
+                  support@aazztech.com
+                </a>
+                <div class="footer__content-address">
+                  202 New Hampshire Avenue
+                  Northwest #100, New York-2573
+                </div>
+              </div>
+            </div>
+
+            <div class="footer__content-col menu">
+              <div class="footer__content-title">
+                Our Company
+              </div>
+              <ul class="footer__content-list">
+                <li><a href="#">About Us</a></li>
+                <li><a href="#">How It Work</a></li>
+                <li><a href="#">Affiliates</a></li>
+                <li><a href="#">Testimonials</a></li>
+                <li><a href="#">Contact Us</a></li>
+                <li><a href="#">Copyright Notice</a></li>
+                <li><a href="#">Blog</a></li>
+              </ul>
+            </div>
+
+            <div class="footer__content-col menu">
+              <div class="footer__content-title">
+                Help Support
+              </div>
+              <ul class="footer__content-list">
+                <li><a href="#">Support Forum</a></li>
+                <li><a href="#">Terms & Conditions</a></li>
+                <li><a href="#">Support Policy</a></li>
+                <li><a href="#">Refund Policy</a></li>
+                <li><a href="#">FAQs</a></li>
+                <li><a href="#">Buyers Faq</a></li>
+                <li><a href="#">Sellers Faq</a></li>
+              </ul>
+            </div>
+
+            <div class="footer__content-col social">
+              <div class="footer__content-title">
+                Newsletter
+              </div>
+              <div class="footer__content-text">
+                Subscribe to get the latest news, update and offer information. Don't worry, we won't send spam!
+              </div>
+              <form>
+                <input type="text" placeholder="Enter email">
+                <button type="submit">Submit</button>
+              </form>
+              <div class="footer__content-social">
+                <a class="facebook" href="#"><i class="fab fa-facebook-f"></i></a>
+                <a class="twitter" href="#"><i class="fab fa-twitter"></i></a>
+                <a class="google" href="#"><i class="fab fa-google"></i></a>
+                <a class="pinterest" href="#"><i class="fab fa-pinterest-p"></i></a>
+                <a class="linkedin" href="#"><i class="fab fa-linkedin-in"></i></a>
+                <a class="dribbble" href="#"><i class="fab fa-dribbble"></i></a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="footer-copy">
+        <div class="container">
+          <div class="footer-copy__text">
+            ©2017 <a href="#">MartPlace</a>. All rights reserved. Created by <a href="#">AazzTech</a>
+          </div>
+        </div>
+      </div>
+    </footer>
+  </div>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="js/libs.min.js"></script>
+  <script src="js/main.js"></script>
+</body>
+
+</html>
